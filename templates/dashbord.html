@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block main %}
+    <h1>Welcome, {{ username }}!</h1>
+    <h2>Your Habit Entries</h2>
+    {% if habits %}
+        <ul>
+            {% for habit in habits %}
+                <li>{{ habit.habit }} – {{ habit.date }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>You haven't added any habits yet!</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %}Add New Habit{% endblock %}
+{% block body %}
+  <h2>Add a New Habit</h2>
+  <form action="{{ url_for('add_habit') }}" method="post">
+      <label for="habit">Habit Description:</label>
+      <input type="text" id="habit" name="habit" placeholder="Enter your habit" required>
+      <button type="submit">Add Habit</button>
+  </form>
+{% endblock %}

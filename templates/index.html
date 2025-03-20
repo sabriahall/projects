@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block body %}
+  <h2>Your Habits</h2>
+  {% if habits %}
+    <ul>
+      {% for habit in habits %}
+        <li>{{ habit.habit }} (Added on: {{ habit.date }})</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No habits added yet.</p>
+  {% endif %}
+{% endblock %}
