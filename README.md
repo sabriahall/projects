@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# projects
-=======
 # Habit Tracker
 
 #### Video Demo: https://youtu.be/HcHheAYiY9w
